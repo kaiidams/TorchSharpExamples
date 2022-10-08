@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\bert_base_cased_tok.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\bert_base_cased_tok.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\bert_chinese.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\bert_chinese.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\bert_multi_cased.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\bert_multi_cased.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\gpt2.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\gpt2.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\laser100k.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\laser100k.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\laser250k.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\laser250k.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\laser500k.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\laser500k.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\roberta.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\roberta.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\syllab.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\uri100k.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\uri100k.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\uri250k.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\uri250k.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\uri500k.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\uri500k.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\wbd_chuni.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\xlm_roberta_base.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\xlm_roberta_base.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\xlnet.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\xlnet.i2w" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\xlnet_nonorm.bin" />
+    <None Remove="C:\Users\kaiida\.nuget\packages\blingfirenuget\0.1.8\contentFiles\cs\any\xlnet_nonorm.i2w" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BlingFireNuget" Version="0.1.8" />
+    <PackageReference Include="TorchSharp-cpu" Version="0.98.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="distilbert-base-uncased-finetuned-sst-2-english.pt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="mnist-mlp.pt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
